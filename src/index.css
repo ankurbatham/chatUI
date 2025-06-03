@@ -15,14 +15,33 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
+.chatbot-body::-webkit-scrollbar {
+  display: none;
+}
+.icon{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.icon button {
+ height: 70px;
+ width:70px;
+ border-radius: 50%;
+ background-color: #a48aeb;
+ cursor: pointer;
+}
+
 .chat-popup{
   background-color: #fff;
-  width: 500px;
-  border-radius: 15px;
+  width: 400px;
+  border-radius: 16px;
   box-shadow: 0 0 128px 0 rgba(0, 0,0, 0.2),0 32px 28px -64px rgba(0,0,0, 0.6);
   position: relative;
+  overflow: hidden;
 }
+
 
 .chat-popup .chat-header{
   background-color: rgba(58, 1, 102, 0.802);
